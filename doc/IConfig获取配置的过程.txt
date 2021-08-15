@@ -1,0 +1,5 @@
+IClientConfig是怎样获取配置值的  
+DefaultClientConfigImpl-->DynamicProperty.getInstance--->new DynamicProperty(propName);--->ConfigurationBackedDynamicPropertySupportImpl-->ConcurrentCompositeConfiguration--->ConfigurableEnvironmentConfiguration.getProperty
+
+ 
+
