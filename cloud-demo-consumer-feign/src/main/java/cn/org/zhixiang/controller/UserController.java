@@ -22,7 +22,7 @@ public class UserController {
 
     @GetMapping("/getUser/{id}")
     public User getUser(@PathVariable("id") Long id) {
-        return userFeignClient.getUser(id, "a", "test");
+        return userFeignClient.getUser(id);
     }
 
     @GetMapping("/getUser2")
