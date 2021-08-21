@@ -1,2 +1,0 @@
-@load注解到restTemplate上
-负载均衡rule

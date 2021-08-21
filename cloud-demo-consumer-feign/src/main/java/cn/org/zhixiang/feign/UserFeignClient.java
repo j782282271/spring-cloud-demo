@@ -14,8 +14,8 @@ public interface UserFeignClient {
     @GetMapping(value = "/user/getUser/{id}")
     User getUser(@PathVariable("id") Long id);
 
-//    @GetMapping(value = "/user/getUser/{id}", headers = {"Content-Type=application/json", "Accept=application/json"})
-//    User getUser(@PathVariable("id") Long id, @RequestParam("name") String name, @RequestHeader("contentType") String type);
+    @GetMapping(value = "/user/getUser/{id}", headers = {"Content-Type=application/json", "Accept=application/json"})
+    User getUser(@PathVariable("id") Long id, @RequestParam("name") String name, @RequestHeader("contentType") String type);
 
     @GetMapping(value = "/user/getUser")
     User getUser2(@RequestParam Map<String, Long> map);
